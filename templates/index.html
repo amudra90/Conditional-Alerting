@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Alerting</title>
+</head>
+<body>
+<div align="center">
+    <form action="" method="post">
+        <p>
+        	
+        	<b> <h1 style="font-size:3vw"><label for="Conditional Alerting">Conditional Alerting</label></h1> 
+        </b>
+        </p>
+
+        <p>
+            <label for="companyName">Company Name</label>
+            <input type="text" name="companyName">
+        </p>
+        <p>
+            <label for="proximityLevel">Proximity Level</label>
+            <input type="text" name="proximityLevel">
+        </p>
+        <div>
+            <label for="article">Summary</label>
+            <textarea id="article" name="article" rows="10" cols="50"></textarea>
+
+ 
+        </div>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+
+    {% if message %}
+       <p>{{ message }}</p>
+    {% endif %}
+    <p>...by Orion Business Innovations</p>
+</div>
+</body>
+</html>
